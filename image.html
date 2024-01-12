@@ -8,12 +8,31 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
+<style>
+    .banner{
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://web-assets.mancity.com/dist/statics/apple-icon-180x180.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-content{
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+</style>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="https://getbootstrap.com/docs/5.3/assets/img/favicons/apple-touch-icon.png" alt="" width="50">
+                <img src="https://web-assets.mancity.com/dist/statics/apple-icon-180x180.png" alt="" width="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,26 +57,37 @@
     </nav>
     <!-- End Navbar -->
 
+    <!-- Banner -->
+    <div class="container-fluid gx-0">
+        <div class="banner">
+            <div class="banner-content text-white">
+                <h1>Welcome Everyone</h1>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odio tempora?</h6>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
     <!-- Carousel -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/1.webp" class="d-block w-100" alt="...">
+                <img src="images/1.webp" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item">
-                <img src="images/2.webp" class="d-block w-100" alt="...">
+                <img src="images/2.webp" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item">
-                <img src="images/3.webp" class="d-block w-100" alt="...">
+                <img src="images/3.webp" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item">
-                <img src="images/4.webp" class="d-block w-100" alt="...">
+                <img src="images/4.webp" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item">
-                <img src="images/5.webp" class="d-block w-100" alt="...">
+                <img src="images/5.webp" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item">
-                <img src="images/6.webp" class="d-block w-100" alt="...">
+                <img src="images/6.webp" class="d-block w-100" alt="">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -74,6 +104,8 @@
     <!-- Container -->
     <div class="container">
         <h1 class="text-center">character</h1>
+        <p class="text-center d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+            animi possimus dolorem officiis accusamus, ipsam beatae?</p>
         <div class="container mt-3">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
@@ -87,7 +119,7 @@
                                 <div class="col-md-6">
                                     <h6 class="text-center">Man City</h6>
                                     <p class="text-center">
-                                        <span class="badge bg-warning">The Citizen</span>
+                                        <span class="badge bg-primary">The Citizen</span>
                                     </p>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">An item</li>
@@ -113,7 +145,7 @@
                                     <div class="col-md-6">
                                         <h6 class="text-center">Man City</h6>
                                         <p class="text-center">
-                                            <span class="badge bg-warning">The Citizen</span>
+                                            <span class="badge bg-primary">The Citizen</span>
                                         </p>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">An item</li>
@@ -140,14 +172,17 @@
                                     <div class="col-md-6">
                                         <h6 class="text-center">Goalkeaper</h6>
                                         <p class="text-center">
-                                            <span class="badge bg-warning">Ederson Moraes</span>
+                                            <span class="badge bg-success">Ederson Moraes</span>
                                         </p>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                            <li class="list-group-item">A fourth item</li>
-                                            <li class="list-group-item">And a fifth one</li>
+                                            <li class="list-group-item text-center">
+                                                <img src="https://mediacdn.mancity.com/meta/media/1cnlvryp/br.svg"
+                                                    alt="" width="30">
+                                            </li>
+                                            <li class="list-group-item text-center">30</li>
+                                            <li class="list-group-item text-center">1,88M</li>
+                                            <li class="list-group-item text-center">Left</li>
+                                            <li class="list-group-item text-center">2017-07-01</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -167,7 +202,66 @@
                                     <div class="col-md-6">
                                         <h6 class="text-center">Goalkeeper</h6>
                                         <p class="text-center">
-                                            <span class="badge bg-warning">Ortega Moreno</span>
+                                            <span class="badge bg-success">Ortega Moreno</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item text-center"><img
+                                                    src="https://mediacdn.mancity.com/meta/media/q0omqxek/de.svg" alt=""
+                                                    width="30"></li>
+                                            <li class="list-group-item text-center">31</li>
+                                            <li class="list-group-item text-center">1,85M</li>
+                                            <li class="list-group-item text-center">A fourth item</li>
+                                            <li class="list-group-item text-center">2022-07-01</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/9.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Goalkeeper</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-success">Scott Carson</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item text-center">
+                                                <img src="https://mediacdn.mancity.com/meta/media/kbujcobi/gb-eng.svg"
+                                                    alt="" width="30">
+                                            </li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/10.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Defense</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-secondary">Manuel Akanji</span>
                                         </p>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">An item</li>
@@ -189,12 +283,471 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="images/9.webp" alt="" class="img-thumbnail">
+                                        <img src="images/11.webp" alt="" class="img-thumbnail">
                                     </div>
                                     <div class="col-md-6">
-                                        <h6 class="text-center">Goalkeeper</h6>
+                                        <h6 class="text-center">Defense</h6>
                                         <p class="text-center">
-                                            <span class="badge bg-warning">Scott Carson</span>
+                                            <span class="badge bg-secondary">Nathan Ake</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/12.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Defense</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-secondary">Ruben Dias</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/13.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Defense</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-secondary">Josko Gvardiol</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/14.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Defense</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-secondary">Rico Lewis</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/15.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Defense</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-secondary">John Stones</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/16.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Defense</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-secondary">Kyle Walker</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/17.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Midfielder</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-warning">Oscar Bobb</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/18.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Midfielder</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-warning">Mateo Kovacic</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/19.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Midfielder</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-warning">Matheus Nunes</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/20.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Midfielder</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-warning">Kalvin Phillips</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/21.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Midfielder</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-warning">Rodrigo</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/22.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Midfielder</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-warning">Bernardo Silva</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/23.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Midfielder</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-warning">Kevin De Bruyne</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/24.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Midfielder</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-warning">Jeremy Doku</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/25.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Midfielder</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-warning">Phil Foden</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/26.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Attacker</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-danger">Julian Alvarez</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/27.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Attacker</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-danger">Erling Haaland</span>
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">A fourth item</li>
+                                            <li class="list-group-item">And a fifth one</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header text-center">Man City</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="images/28.webp" alt="" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-center">Manager</h6>
+                                        <p class="text-center">
+                                            <span class="badge bg-info">Pep Guardiola</span>
                                         </p>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">An item</li>
@@ -212,6 +765,22 @@
             </div>
         </div>
         <!-- End Container -->
+
+        <div class="container">
+            <h2 class="text-center">Details</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sequi rerum perspiciatis expedita,
+                exercitationem obcaecati dicta suscipit rem natus hic.</p>
+            <div class="row align-items-center bg-info p-4 rounded-5 shadow-lg">
+                <div class="col-md-6">
+                    <h4>Detail Character</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem itaque delectus soluta culpa ad
+                        nihil eligendi quis, repellat sed ullam!</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/6.webp" alt="" class="w-100 rounded-3">
+                </div>
+            </div>
+        </div>
 
 
         <script src="js/bootstrap.bundle.js"></script>
