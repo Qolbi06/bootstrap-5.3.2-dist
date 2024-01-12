@@ -9,15 +9,15 @@
 </head>
 
 <style>
-    .banner{
+    .banner {
         height: 100vh;
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://web-assets.mancity.com/dist/statics/apple-icon-180x180.png');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://web-assets.mancity.com/dist/statics/apple-icon-180x180.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
 
-    .banner-content{
+    .banner-content {
         justify-content: center;
         align-items: center;
         height: 100%;
@@ -68,38 +68,86 @@
     </div>
     <!-- End Banner -->
 
-    <!-- Carousel -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/1.webp" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="images/2.webp" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="images/3.webp" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="images/4.webp" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="images/5.webp" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="images/6.webp" class="d-block w-100" alt="">
+    <!-- Accordion -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8 mt-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse
+                            plugin adds the appropriate classes that we use to style each element. These classes control
+                            the
+                            overall appearance, as well as the showing and hiding via CSS transitions. You can modify
+                            any of
+                            this with custom CSS or overriding our default variables. It's also worth noting that just
+                            about
+                            any
+                            HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                            overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes
+                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                            can
+                            modify any of this with custom CSS or overriding our default variables. It's also worth
+                            noting
+                            that
+                            just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                            does
+                            limit
+                            overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes
+                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                            can
+                            modify any of this with custom CSS or overriding our default variables. It's also worth
+                            noting
+                            that
+                            just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                            does
+                            limit
+                            overflow.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-    <!-- End Carousel -->
+    <!-- End Accordion -->
 
     <!-- Container -->
     <div class="container">
@@ -210,7 +258,7 @@
                                                     width="30"></li>
                                             <li class="list-group-item text-center">31</li>
                                             <li class="list-group-item text-center">1,85M</li>
-                                            <li class="list-group-item text-center">A fourth item</li>
+                                            <li class="list-group-item text-center">Right</li>
                                             <li class="list-group-item text-center">2022-07-01</li>
                                         </ul>
                                     </div>
@@ -236,12 +284,12 @@
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item text-center">
                                                 <img src="https://mediacdn.mancity.com/meta/media/kbujcobi/gb-eng.svg"
-                                                    alt="" width="30">
+                                                    alt="" width="30" x>
                                             </li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                            <li class="list-group-item">A fourth item</li>
-                                            <li class="list-group-item">And a fifth one</li>
+                                            <li class="list-group-item text-center">38</li>
+                                            <li class="list-group-item text-center">1,9M</li>
+                                            <li class="list-group-item text-center">Right</li>
+                                            <li class="list-group-item text-center">2019-08-08</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -264,11 +312,14 @@
                                             <span class="badge bg-secondary">Manuel Akanji</span>
                                         </p>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                            <li class="list-group-item">A fourth item</li>
-                                            <li class="list-group-item">And a fifth one</li>
+                                            <li class="list-group-item text-center">
+                                                <img src="https://mediacdn.mancity.com/meta/media/ygdf1u0z/ch.svg"
+                                                    alt="" width="30">
+                                            </li>
+                                            <li class="list-group-item text-center">28</li>
+                                            <li class="list-group-item text-center">1,86M</li>
+                                            <li class="list-group-item text-center">Right</li>
+                                            <li class="list-group-item text-center">2022-09-01</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -291,11 +342,14 @@
                                             <span class="badge bg-secondary">Nathan Ake</span>
                                         </p>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                            <li class="list-group-item">A fourth item</li>
-                                            <li class="list-group-item">And a fifth one</li>
+                                            <li class="list-group-item text-center">
+                                                <img src="https://mediacdn.mancity.com/meta/media/xv1hoqyi/nl.svg"
+                                                    alt="" width="30">
+                                            </li>
+                                            <li class="list-group-item text-center">28</li>
+                                            <li class="list-group-item text-center">1,8M</li>
+                                            <li class="list-group-item text-center">Left</li>
+                                            <li class="list-group-item text-center">2020-08-05</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -318,11 +372,13 @@
                                             <span class="badge bg-secondary">Ruben Dias</span>
                                         </p>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                            <li class="list-group-item">A fourth item</li>
-                                            <li class="list-group-item">And a fifth one</li>
+                                            <li class="list-group-item text-center">
+                                                <img src="https://mediacdn.mancity.com/meta/media/wyuhecht/pt.svg" alt="" width="30">
+                                            </li>
+                                            <li class="list-group-item text-center">26</li>
+                                            <li class="list-group-item text-center">1,86M</li>
+                                            <li class="list-group-item text-center">Right</li>
+                                            <li class="list-group-item text-center">2020-09-29</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -766,19 +822,64 @@
         </div>
         <!-- End Container -->
 
+        <!-- Carousel -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/1.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/2.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/3.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/4.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/5.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/6.webp" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- End Carousel -->
+
+        <!-- Details -->
         <div class="container">
             <h2 class="text-center">Details</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sequi rerum perspiciatis expedita,
                 exercitationem obcaecati dicta suscipit rem natus hic.</p>
             <div class="row align-items-center bg-info p-4 rounded-5 shadow-lg">
-                <div class="col-md-6">
+                <div class="col-md-6 order-sm-2">
                     <h4>Detail Character</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem itaque delectus soluta culpa ad
                         nihil eligendi quis, repellat sed ullam!</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-sm-1">
                     <img src="images/6.webp" alt="" class="w-100 rounded-3">
                 </div>
+            </div>
+        </div>
+        <!-- End Details -->
+
+        <div class="container card pt-5">
+            <div class="row">
+                <div class="col-md-4 order-2">Kolom order 1</div>
+                <div class="col-md-4 order-3">Kolom order 2</div>
+                <div class="col-md-4 order-1">Kolom order 3</div>
             </div>
         </div>
 
